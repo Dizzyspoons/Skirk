@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Discord / Embed Color -->
-    <meta name="theme-color" content="#ff0000">
+    <meta name="theme-color" content="#ED4245"> <!-- 🔴 Discord red -->
 
     <!-- Canonical -->
     <link rel="canonical" href="https://skirk-github-io-iota.vercel.app/">
@@ -199,8 +199,8 @@
             font-size: clamp(2rem, 6vw, 4rem);
             font-weight: 900;
             background: var(--gradient-primary);
-            -webkit-background-clip: text;
             background-clip: text;
+            -webkit-background-clip: text;
             color: transparent;
             position: relative;
             display: inline-block;
@@ -1019,7 +1019,6 @@
             font-size: clamp(1.3rem, 3vw, 2.2rem);
             font-weight: 800;
             background: var(--gradient-primary);
-            -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             margin: 0;
@@ -1179,6 +1178,7 @@
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             background-clip: text;
+            -webkit-background-clip: text;
             color: transparent;
             text-align: center;
             margin-bottom: 1rem;
@@ -1768,6 +1768,7 @@
             background: linear-gradient(90deg, #7915a0, #4c00fe, #7e1212);
             -webkit-background-clip: text;
             background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             color: transparent;
         }
@@ -2386,6 +2387,9 @@ nav {
                             <i class="fas fa-check"></i>
                             <span>Can buy 1 character or weapon/month (10 stars)</span>
                         </li>
+                    <li class= "red-tier-feature color">
+                    <i class ="fas fa-check"></i>
+                    <span class="color"> 10 minutes freeze from captcha</span>
                     </ul>
                     <a href="https://discord.gg/ApE66m9FVu" class="btn btn-primary" style="width: 100%;">Purchase</a>
                 </div>
@@ -2423,6 +2427,9 @@ nav {
                             <i class="fas fa-check"></i>
                             <span>Add partner</span>
                         </li>
+                    <li class= "red-tier-feature color">
+                    <i class ="fas fa-check"></i>
+                    <span class="color">15 minutes freeze from captcha</span>
                     </ul>
                     <a href="https://discord.gg/ApE66m9FVu" class="btn btn-primary" style="width: 100%;">Purchase</a>
                 </div>
@@ -2447,7 +2454,7 @@ nav {
                         </li>
                         <li class="tier-feature">
                             <i class="fas fa-check"></i>
-                            <span>2 Free character or weapon/month (5 stars)</span>
+                            <span>6 Free character (5 stars)</span>
                         </li>
                         <li class="tier-feature">
                             <i class="fas fa-check"></i>
@@ -2457,22 +2464,97 @@ nav {
                             <i class="fas fa-check"></i>
                             <span>Custom wallpaper everywhere</span>
                         </li>
-                        <li class="tier-feature">
+                        <li class="red-tier-feature color">
                             <i class="fas fa-check"></i>
                             <span>Beautiful profile (ability to customize profile color & name)</span>
                         </li>
-                        <li class="tier-feature">
+                        <li class="red-tier-feature color">
                             <i class="fas fa-check"></i>
-                            <span>Can change bot profile in your own server</span>
+                            <span class="color">Can change bot profile in your own server</span>
                         </li>
-                        <li class="tier-feature">
+                        <li class="red-tier-feature color">
                             <i class="fas fa-check"></i>
-                            <span>Add partner on your profile</span>
+                            <span class="color">Add partner on your profile</span>
                         </li>
+                    <li class= "red-tier-feature color">
+                    <i class ="fas fa-check"></i>
+                    <span class = "color">20 minutes freeze from captcha</span>
+                    </li>
                     </ul>
                     <a href="https://discord.gg/ApE66m9FVu" class="btn btn-primary" style="width: 100%;">Purchase</a>
                 </div>
             </div>
+<style>
+.color2 {
+  /* Make text transparent to show background gradient */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Your color spectrum (Ordered for smooth flow) */
+  background-image: linear-gradient(
+    90deg, 
+    #7644ff, 
+    #5aa7ff, 
+    #b9fdf4, 
+    #fdff74, 
+    #f24c4c, 
+    #7644ff /* Loop back to start */
+  );
+
+  /* Animation settings */
+  background-size: 200% auto;
+  animation: gradient-flow 3s linear infinite;
+  
+  /* Optional: Make the number stand out */
+  font-weight: bold;
+}
+
+/* The animation keyframes */
+@keyframes gradient-flow {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+    .red-tier-feature i {
+        color: #ff0303;
+    }
+.color span {
+  /* 1. Make the text transparent so the background shows through */
+  color: transparent; 
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 2. Define your colors in a spectrum order for smoothness 
+     Added the first color to the end to make the loop seamless */
+  background-image: linear-gradient(
+    90deg, 
+    #7644ff, /* Purple */
+    #5aa7ff, /* Blue */
+    #b9fdf4, /* Cyan */
+    #fdff74, /* Yellow */
+    #f24c4c, /* Red */
+    #7644ff  /* Back to Purple for seamless loop */
+  );
+
+  /* 3. Make the background wider than the text so we can slide it */
+  background-size: 200% auto;
+
+  /* 4. The Animation */
+  animation: gradient-flow 3s linear infinite;
+  font-size: 15.5px;
+  
+  /* Optional: Makes the text look cleaner */
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+</style>
             <!-- Genesis Pricing Section -->
             <h3 style="margin-top: 4rem; text-align: center; color: var(--text-primary); font-size: 2.5rem;">One-Time Donations</h3>
             <div class="genesis-pricing">
@@ -3358,4 +3440,3 @@ code {
     </script>
 </body>
 </html>
-
